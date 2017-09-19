@@ -8,6 +8,7 @@ RUN javac -d bin src/HelloWorld.java
 
 ENV FOO bar
 ENV VERSION 1.2
+ENV TAG automated
 
 RUN touch toto
 ENTRYPOINT ["java", "-cp", "bin", "HelloWorld"]
